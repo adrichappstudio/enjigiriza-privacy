@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Enjigiriza Ya Baibuli</title>
     <style>
+        /* Base styling (dark mode default) */
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #121212;
@@ -12,6 +13,7 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
         }
         header {
             background: #1DB954;
@@ -21,6 +23,7 @@
             border-bottom-left-radius: 50px;
             border-bottom-right-radius: 50px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: background 0.3s, color 0.3s;
         }
         header h1 {
             margin: 0;
@@ -40,6 +43,7 @@
             padding: 30px;
             border-radius: 20px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            transition: background 0.3s, color 0.3s;
         }
         h2 {
             color: #1DB954;
@@ -64,6 +68,35 @@
             margin: 15px auto;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.4);
+        }
+
+        /* Light mode overrides */
+        @media (prefers-color-scheme: light) {
+            body {
+                background-color: #f9f9f9;
+                color: #111;
+            }
+            header {
+                background: #1DB954;
+                color: #fff;
+            }
+            main {
+                background: #fff;
+                color: #111;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            }
+            h2 {
+                color: #1DB954;
+            }
+            a {
+                color: #1DB954;
+            }
+            footer {
+                color: #555;
+            }
+            .app-log-section img {
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
         }
     </style>
 </head>
@@ -114,3 +147,4 @@
     </footer>
 </body>
 </html>
+
